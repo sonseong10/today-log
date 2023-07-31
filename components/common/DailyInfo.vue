@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   h3.title {
     padding-top: 96px;
     background-repeat: no-repeat;
