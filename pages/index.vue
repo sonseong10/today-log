@@ -3,5 +3,7 @@
     <CommonDailyInfo />
 
     <CommonCardsFactCats />
+    
+    <CommonCardsFactDogs />
   </div>
 </template>
