@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="card shadow-3xl">
     <p v-if="loading"> Loading...</p>
     <div v-else class="flex flex-col">
       <span></span>
@@ -42,8 +42,8 @@ export default {
 </script>
 
 <style scoped>
-  .item {
-    overflow: hidden;
+  .card {
+    overflow-y: auto;
     position: relative;
     width: 297px;
     height: 192px;

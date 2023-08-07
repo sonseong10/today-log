@@ -1,6 +1,7 @@
 <template>
-  <header class="flex items-center justify-between container mx-auto h-[4.5rem]" >
-    <div>
+  <header >
+    <div class="flex items-center justify-between container mx-auto h-[4.5rem]">
+      <div>
       <em class="text-left">Logo</em>
     </div>
 
@@ -11,6 +12,7 @@
 
     <div>
       <button>click me</button>
+    </div>
     </div>
   </header>
 </template>

@@ -1,13 +1,16 @@
 <template>
-  <div class="item">
+  <div class="card shadow-3xl" >
     <p v-if="loading"> Loading...</p>
+
     <div v-else class="flex flex-col">
-      <span></span>
-      <strong>{{ catFact }}</strong>
+      <span>🐈 고양이의 가벼운 사실</span>
+
+      <a href="#" class="more-button">알아보기</a>
+
       <span class="ltr">
         <span class="me-2">#고양이</span>
         <span>#짧은 지식</span>
-      </span>
+      </span> 
     </div>
   </div>
 </template>
@@ -23,7 +26,7 @@ export default {
 
     onMounted(async () => {
       try {
-        const response = await axios.get('https://meowfacts.herokuapp.com');
+        const response = await axios.get('https://meowfacts.herokuapp.com?lang=kor');
         catFact.value = response.data.data[0];
         loading.value = false;
       } catch (error) {
@@ -42,8 +45,8 @@ export default {
 </script>
 
 <style scoped>
-  .item {
-    overflow: hidden;
+  .card {
+    overflow: auto;
     position: relative;
     width: 297px;
     height: 192px;
@@ -51,7 +54,6 @@ export default {
     margin-top: 36px;
     border-radius: 14px;
     background-color: #fff;
-    box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09);
     
   }
 </style>

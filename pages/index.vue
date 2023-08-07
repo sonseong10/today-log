@@ -2,8 +2,15 @@
   <div class="container mx-auto" >
     <CommonDailyInfo />
 
-    <CommonCardsFactCats />
-    
-    <CommonCardsFactDogs />
+    <LayoutsSection >
+      <CommonCardsFactCats  />
+      <CommonCardsFactDogs />
+    </LayoutsSection>
   </div>
 </template>
+
+<script setup lang="ts">
+  definePageMeta({
+    layout: "default"
+  })
+</script>
