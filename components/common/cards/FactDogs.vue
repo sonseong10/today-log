@@ -2,8 +2,9 @@
   <div class="card shadow-3xl">
     <p v-if="loading"> Loading...</p>
     <div v-else class="flex flex-col">
-      <span></span>
-      <strong>{{ dogFact }}</strong>
+      <span>🐕 강아지의 숨겨진 사실</span>
+      <!-- <strong>{{ dogFact }}</strong> -->
+      <a href="#">바로가기</a>
       <span class="ltr">
         <span class="me-2">#강아지</span>
         <span>#짧은 지식</span>
@@ -45,13 +46,12 @@ export default {
   .card {
     overflow-y: auto;
     position: relative;
-    width: 297px;
+    width: calc((100% / 2) - 10px);
     height: 192px;
     padding: 25px 24px 0;
     margin-top: 36px;
     border-radius: 14px;
     background-color: #fff;
     box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09);
-    
   }
 </style>

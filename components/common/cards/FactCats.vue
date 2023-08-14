@@ -48,7 +48,7 @@ export default {
   .card {
     overflow: auto;
     position: relative;
-    width: 297px;
+    width: calc((100% / 2) - 10px);
     height: 192px;
     padding: 25px 24px 0;
     margin-top: 36px;
