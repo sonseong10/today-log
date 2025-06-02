@@ -1,7 +1,7 @@
 <template>
     <h3 :style="backgroundStyle" class="title">
       <strong>{{ month }}월 {{ day }}일에 전하는</strong>
-      <span>잡학다식 이야기입니다</span>
+      <span>라이브러리 이야기입니다</span>
     </h3>
 </template>
 
@@ -15,9 +15,8 @@ export default {
     const today = ref(new Date());
     const month = today.value.getMonth() + 1;
     const day = today.value.getDate();
-
     const backgroundStyle = ref({
-      backgroundImage: `url("https://www.kakaocorp.com/page/calendar/light/ico_date${day}.gif")`,
+      backgroundImage: `url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/service/calendar/light/ico_date${day}.gif")`,
     });
 
     return { month, day,backgroundStyle };
